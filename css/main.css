@@ -2,14 +2,21 @@ body {
   background-color: #014;
 }
 
-figure, h1, h2, h3, h4, h5, h6 {
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
   color: #960;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
-header, figure {
+header,
+figure {
   padding-bottom: 4px;
   border-bottom:2px dashed #139;
   margin-bottom: 4px;
@@ -30,6 +37,10 @@ img {
   height: 75px;
 }
 
+#subsection_title {
+  color: #430;
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -48,17 +59,49 @@ img {
   width: 100%;
 }
 
-.article_box_1 {
+.featured_box {
   order: 3;
   width: 100%;
 }
 
-.article_box_2 {
+.article_box_1 {
   order: 4;
   width: 100%;
 }
 
-.article_box_3 {
+.article_box_2 {
   order: 5;
   width: 100%;
+}
+
+.article_box_3 {
+  order: 6;
+  width: 100%;
+}
+
+@media screen and (min-width: 425px) {
+  .article_box_1 {
+    order: 4;
+    margin-right: 10px;
+    width: calc((100% - 20px)/3);
+  }
+
+  .article_box_2 {
+    order: 5;
+    margin-right: 10px;
+    width: calc((100% - 20px)/3);
+  }
+
+  .article_box_3 {
+    order: 6;
+    width: calc((100% - 20px)/3);
+  }
+}
+
+@media screen and (min-width: 770px) {
+  body {
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
