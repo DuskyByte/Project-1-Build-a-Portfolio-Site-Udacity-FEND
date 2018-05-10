@@ -1,0 +1,64 @@
+body {
+  background-color: #014;
+}
+
+figure, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #960;
+  padding: 0px;
+  margin: 0px;
+}
+
+header, figure {
+  padding-bottom: 4px;
+  border-bottom:2px dashed #139;
+  margin-bottom: 4px;
+}
+
+p {
+  font-family: 'Slabo 27px', serif;
+  color: #960;
+}
+
+img {
+  max-width: 100%;
+}
+
+#header_logo {
+  order: 0;
+  width: 75px;
+  height: 75px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name_box {
+  order: 1;
+  width: calc(100% - 75px);
+  text-align: right;
+  padding-top: calc((75px - 45px)/2);
+}
+
+.introduction_box {
+  order: 2;
+  width: 100%;
+}
+
+.article_box_1 {
+  order: 3;
+  width: 100%;
+}
+
+.article_box_2 {
+  order: 4;
+  width: 100%;
+}
+
+.article_box_3 {
+  order: 5;
+  width: 100%;
+}
